@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background: #f5f5f5;
+}
+
+nav{
+    background: #232f3e;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px;
+}
+
+.serach-container input, button{
+padding: 5px 10px;
+border: none;
+font-size: 16px;
+}
+
+.serach-container input{
+    border-radius: 3px 0 0 3px;
+}
+
+.serach-container button{
+    border-radius: 0px 3px 3px 0;
+    background-color: gold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.serach-container button:hover{
+    background-color: #d3b83d;
+  
+}
+
+/* main section styling */
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-block: 40px;
+
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.movie_container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+.movie_container img {
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.movie_container h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.movie_container p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.movie_container strong {
+    font-weight: bold;
+}
+
+
+/* footer Styling */
+
+footer{
+text-align: center;
+background: #232f3e;
+color: white;
+padding-block: 15px;
+margin-top: 30px;
+font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar h1 {
+        font-size: 1.5em;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-container input,
+    .search-container button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .search-container button {
+        margin-top: 5px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    main section {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    .movie_container {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .movie_container img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .movie_container h2 {
+        font-size: 1.5em;
+    }
+
+    .movie_container p {
+        font-size: 1em;
+    }
+}
